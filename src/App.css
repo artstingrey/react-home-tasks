@@ -12,3 +12,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.school {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.school__numbers {
+  display: flex;
+}
+
+.school__number {
+  padding: 10px;
+  border: 1px solid #000;
+}
