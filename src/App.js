@@ -1,13 +1,10 @@
-import { useState } from "react";
 import "./App.css";
-import Schools from "./components/shools/schools";
-
+import TodoPage from "./components/todo-page/todo-page";
 
 function App() {
-
   return (
     <div className="App">
-      <Schools/>
+      <TodoPage />
     </div>
   );
 }
