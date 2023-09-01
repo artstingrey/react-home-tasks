@@ -5,7 +5,7 @@ import AddTodoItem from "../add-todo-item/add-todo-item";
 
 
 const TodoPage = () => {
-  const [todoList,setTodoList] = useState([{id:1,action:"drink water"},{id:2,action:"go to the cinema"}])
+  const [todoList, setTodoList] = useState([{id:1,action:"drink water"},{id:2,action:"go to the cinema"}])
 
   const addTodoItem = (action) => {
       let newItem = {
@@ -20,9 +20,14 @@ const TodoPage = () => {
     setTodoList(newArray);
   }
   
+  const changeTodoItem = (index, newItem) => {
+    //setTodoList([...todoList, newItem]);
+    setTodoList(todoList.with(index, newItem));
+  }
+
   return (
     <>
-      <TodoList todos={todoList} deleteTodoItem={deleteTodoItem}/>
+      <TodoList todos={todoList} deleteTodoItem={deleteTodoItem} changeTodoItem={changeTodoItem}/>
       <AddTodoItem addTodoItem={addTodoItem}/>
     </>
   );
