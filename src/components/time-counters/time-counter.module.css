@@ -1,0 +1,6 @@
+.timers {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    font-size: 30px;
+}
